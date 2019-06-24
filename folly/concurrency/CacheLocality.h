@@ -379,8 +379,8 @@ FOLLY_TLS
     typename AccessSpreader<Atom>::CpuCache AccessSpreader<Atom>::cpuCache;
 #endif
 
-template <template <typename> class Atom>
-bool AccessSpreader<Atom>::initialized = AccessSpreader<Atom>::initialize();
+// template <template <typename> class Atom>
+// bool AccessSpreader<Atom>::initialized = AccessSpreader<Atom>::initialize();
 
 // Suppress this instantiation in other translation units. It is
 // instantiated in CacheLocality.cpp

@@ -24,13 +24,16 @@
 #define FOLLY_DETAIL_HAVE_DEMANGLE_H 0
 #endif
 
-namespace folly {
-namespace detail {
+#define FOLLY_DETAIL_HAVE_DEMANGLE_H 0
 
-extern int cplus_demangle_v3_callback_wrapper(
-    char const* mangled,
-    void (*cbref)(char const*, std::size_t, void*),
-    void* opaque);
+namespace folly
+{
+namespace detail
+{
+extern int cplus_demangle_v3_callback_wrapper(char const* mangled,
+                                              void (*cbref)(char const*,
+                                                            std::size_t, void*),
+                                              void* opaque);
 
-} // namespace detail
-} // namespace folly
+}  // namespace detail
+}  // namespace folly
